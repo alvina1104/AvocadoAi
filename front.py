@@ -1,12 +1,10 @@
 import streamlit as st
 import requests
 
-from main import avocado_app
-
 api_url = 'http://127.0.0.1:8000/predict/'
 
 
-st.title(' Predidict  the Avacado Ripeness ')
+st.title(' Predict  the Avocado Ripeness ')
 
 firmness = st. number_input('Firmness:', format='%.1f')
 hue = st.number_input('Hue:', value=0)
